@@ -1,0 +1,188 @@
+
+/*CSS Variables*/
+:root {
+  --primary-color: #9c5526;
+  --secondary-color: #54331d;
+  --white-color: #ede7e3;
+  --hover-color: #ec823c;
+  --black-color: #353331;
+  --black75: hsla(24, 4%, 20%, 0.75);
+}
+
+/*Global Styles*/
+h1 {
+  font-size: 2.7rem;
+}
+
+
+h3 {
+  font-size: 1.9rem;
+}
+
+
+h4 {
+  font-size: 1.6rem;
+}
+
+.small {
+  font-size: 1rem;
+}
+
+* {
+  margin: 0px 0px 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sofia sans, sans-serif;
+  font-size: 1.1rem;
+  color: var(--black-color);
+  line-height: 1.4;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/coffee.jpeg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+h1, h3, h4 {
+  font-family: Patua one, cursive;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+
+/*Header*/
+header {
+  background-color: var(--secondary-color);
+  padding-top: 1rem ;
+  padding-bottom: 1rem;
+  
+
+
+}
+h1 {
+  background-color: var(--white-color);
+  width:250px;
+  padding: 0.15em 0 0.15em 0;
+  text-align: center;
+  margin:auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px 0px hsla(0, 0%, 0%, 0.5);
+  box-shadow: 0px 0px 20px 0px rgba(84,51,29,0.5) inset;
+}
+
+nav{
+  text-align: right;
+}
+nav li {
+  display: inline;
+  margin-right: 1rem;
+}
+nav a{
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 1.9rem;
+}
+nav a:active,nav a:hover{
+  color: var(--hover-color);
+}
+
+
+/* main */
+
+main{
+  background-color: var(--white-color);
+  width:80%;
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem 0 1rem 0;
+}
+.content-wrapper{
+width:80%;
+margin: auto;
+}
+/*
+.content-wrapper section:nth-child(-n+2){
+margin-bottom: 1rem;
+} 
+*/
+#about, #menu {
+  margin-bottom: 1rem;
+}
+
+/* About section */
+#about p{
+  max-width: 60ch;
+  margin: 0.5rem;
+}
+#about li{
+  list-style-type: none;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: 1em 1em;
+  padding-left: 1.5em;
+  background-position: 0 0.2em;
+}
+
+
+/*Menu section*/
+
+.item p {
+  display: inline-block;
+
+}
+
+.title {
+  width: 75%;
+  text-align: left;
+}
+
+.price {
+  width: 25%;
+  text-align: right;
+}
+
+#menu h4{
+text-align: center;
+}
+#menu section:nth-child(-n+2){
+  margin-bottom: 1rem;
+  } 
+
+/*Reservation section*/
+#reservation textarea,input,select,label{
+  font-family: inherit;
+  color: var(--black-color);
+}
+#reservation label{
+  display:block;
+  color: var(--black75);
+}
+
+#reservation input,textarea,select{
+ background-color: #d6ab8f; 
+ border: 0;
+ width: 100%;
+ margin-bottom: 0.5em;
+}
+
+#reservation input[type=submit]{
+  font-size: 1.25rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/*footer*/
+
+footer{
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
